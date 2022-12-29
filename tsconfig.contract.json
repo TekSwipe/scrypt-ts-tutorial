@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "outDir": "./out/contracts",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "plugins": [
+      {
+        "transform": "scrypt-ts/dist/transformer", // Required
+        "transformProgram": true, // Required
+        "outDir": "./out/scrypt", // Optional, define the auto-generated `.scrypt` files folder
+        "debug": true // Optional, enable/disable debug log in console.
+      }
+    ]
+  },
+  "include": [
+    "./contracts"
+  ]
+}
